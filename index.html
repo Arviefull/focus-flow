@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Focus Flow</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="workspace" aria-label="Focus Flow">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Daily focus desk</p>
+            <h1>Focus Flow</h1>
+          </div>
+          <button class="icon-button" id="themeToggle" type="button" aria-label="Переключить тему" title="Переключить тему">
+            <span aria-hidden="true">◐</span>
+          </button>
+        </header>
+
+        <section class="focus-panel" aria-label="Таймер фокуса">
+          <div class="timer-ring" aria-live="polite">
+            <svg viewBox="0 0 220 220" role="img" aria-label="Прогресс таймера">
+              <circle class="ring-track" cx="110" cy="110" r="96"></circle>
+              <circle class="ring-progress" id="ringProgress" cx="110" cy="110" r="96"></circle>
+            </svg>
+            <div class="timer-copy">
+              <span id="modeLabel">Фокус</span>
+              <strong id="timeDisplay">25:00</strong>
+            </div>
+          </div>
+
+          <div class="controls" aria-label="Управление таймером">
+            <button class="primary" id="startPause" type="button">Старт</button>
+            <button id="resetTimer" type="button">Сброс</button>
+          </div>
+
+          <div class="mode-switch" role="group" aria-label="Режим таймера">
+            <button class="active" data-mode="focus" type="button">25 мин</button>
+            <button data-mode="short" type="button">5 мин</button>
+            <button data-mode="long" type="button">15 мин</button>
+          </div>
+        </section>
+
+        <section class="task-panel" aria-label="Задачи">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Today</p>
+              <h2>Задачи</h2>
+            </div>
+            <span class="counter" id="taskCounter">0 / 0</span>
+          </div>
+
+          <form class="task-form" id="taskForm">
+            <input id="taskInput" type="text" maxlength="64" placeholder="Добавить задачу" autocomplete="off" />
+            <button type="submit" aria-label="Добавить задачу">+</button>
+          </form>
+
+          <ul class="task-list" id="taskList" aria-label="Список задач"></ul>
+        </section>
+
+        <section class="stats-panel" aria-label="Статистика">
+          <div>
+            <p class="eyebrow">Session stats</p>
+            <h2>Ритм дня</h2>
+          </div>
+          <div class="stats-grid">
+            <article>
+              <span id="focusCount">0</span>
+              <p>фокус-сессий</p>
+            </article>
+            <article>
+              <span id="completedCount">0</span>
+              <p>задач закрыто</p>
+            </article>
+            <article>
+              <span id="focusMinutes">0</span>
+              <p>минут фокуса</p>
+            </article>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
