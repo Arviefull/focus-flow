@@ -30,10 +30,6 @@ Then open:
 http://localhost:8080
 ```
 
-## Deploy
-
-Deployment instructions for GitHub and GitHub Pages are available in [DEPLOY.md](./DEPLOY.md).
-
 ## Russian Notes
 
 If you want a Russian explanation of the project, see [docs/README.ru.md](./docs/README.ru.md).
@@ -46,7 +42,6 @@ focus-flow/
 │   └── preview.svg
 ├── docs/
 │   └── README.ru.md
-├── DEPLOY.md
 ├── app.js
 ├── index.html
 ├── styles.css
