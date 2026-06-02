@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -14,69 +14,69 @@
             <p class="eyebrow">Daily focus desk</p>
             <h1>Focus Flow</h1>
           </div>
-          <button class="icon-button" id="themeToggle" type="button" aria-label="Переключить тему" title="Переключить тему">
+          <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle theme" title="Toggle theme">
             <span aria-hidden="true">◐</span>
           </button>
         </header>
 
-        <section class="focus-panel" aria-label="Таймер фокуса">
+        <section class="focus-panel" aria-label="Focus timer">
           <div class="timer-ring" aria-live="polite">
-            <svg viewBox="0 0 220 220" role="img" aria-label="Прогресс таймера">
+            <svg viewBox="0 0 220 220" role="img" aria-label="Timer progress">
               <circle class="ring-track" cx="110" cy="110" r="96"></circle>
               <circle class="ring-progress" id="ringProgress" cx="110" cy="110" r="96"></circle>
             </svg>
             <div class="timer-copy">
-              <span id="modeLabel">Фокус</span>
+              <span id="modeLabel">Focus</span>
               <strong id="timeDisplay">25:00</strong>
             </div>
           </div>
 
-          <div class="controls" aria-label="Управление таймером">
-            <button class="primary" id="startPause" type="button">Старт</button>
-            <button id="resetTimer" type="button">Сброс</button>
+          <div class="controls" aria-label="Timer controls">
+            <button class="primary" id="startPause" type="button">Start</button>
+            <button id="resetTimer" type="button">Reset</button>
           </div>
 
-          <div class="mode-switch" role="group" aria-label="Режим таймера">
-            <button class="active" data-mode="focus" type="button">25 мин</button>
-            <button data-mode="short" type="button">5 мин</button>
-            <button data-mode="long" type="button">15 мин</button>
+          <div class="mode-switch" role="group" aria-label="Timer mode">
+            <button class="active" data-mode="focus" type="button">25 min</button>
+            <button data-mode="short" type="button">5 min</button>
+            <button data-mode="long" type="button">15 min</button>
           </div>
         </section>
 
-        <section class="task-panel" aria-label="Задачи">
+        <section class="task-panel" aria-label="Tasks">
           <div class="panel-heading">
             <div>
               <p class="eyebrow">Today</p>
-              <h2>Задачи</h2>
+              <h2>Tasks</h2>
             </div>
             <span class="counter" id="taskCounter">0 / 0</span>
           </div>
 
           <form class="task-form" id="taskForm">
-            <input id="taskInput" type="text" maxlength="64" placeholder="Добавить задачу" autocomplete="off" />
-            <button type="submit" aria-label="Добавить задачу">+</button>
+            <input id="taskInput" type="text" maxlength="64" placeholder="Add a task" autocomplete="off" />
+            <button type="submit" aria-label="Add task">+</button>
           </form>
 
-          <ul class="task-list" id="taskList" aria-label="Список задач"></ul>
+          <ul class="task-list" id="taskList" aria-label="Task list"></ul>
         </section>
 
-        <section class="stats-panel" aria-label="Статистика">
+        <section class="stats-panel" aria-label="Stats">
           <div>
             <p class="eyebrow">Session stats</p>
-            <h2>Ритм дня</h2>
+            <h2>Daily rhythm</h2>
           </div>
           <div class="stats-grid">
             <article>
               <span id="focusCount">0</span>
-              <p>фокус-сессий</p>
+              <p>focus sessions</p>
             </article>
             <article>
               <span id="completedCount">0</span>
-              <p>задач закрыто</p>
+              <p>tasks completed</p>
             </article>
             <article>
               <span id="focusMinutes">0</span>
-              <p>минут фокуса</p>
+              <p>focus minutes</p>
             </article>
           </div>
         </section>
