@@ -1,7 +1,7 @@
 const MODES = {
-  focus: { label: "Фокус", seconds: 25 * 60 },
-  short: { label: "Перерыв", seconds: 5 * 60 },
-  long: { label: "Длинный отдых", seconds: 15 * 60 },
+  focus: { label: "Focus", seconds: 25 * 60 },
+  short: { label: "Break", seconds: 5 * 60 },
+  long: { label: "Long break", seconds: 15 * 60 },
 };
 
 const STORAGE_KEY = "focus-flow-state";
@@ -112,7 +112,7 @@ themeToggle.addEventListener("click", () => {
 });
 
 function startTimer() {
-  startPause.textContent = "Пауза";
+  startPause.textContent = "Pause";
   timerId = window.setInterval(() => {
     remainingSeconds -= 1;
 
@@ -128,7 +128,7 @@ function startTimer() {
 function pauseTimer() {
   window.clearInterval(timerId);
   timerId = null;
-  startPause.textContent = "Старт";
+  startPause.textContent = "Start";
 }
 
 function completeSession() {
@@ -168,7 +168,7 @@ function renderTasks() {
   taskCounter.textContent = `${done} / ${total}`;
 
   if (!state.tasks.length) {
-    taskList.innerHTML = '<li class="empty">Пока задач нет. Добавьте один конкретный шаг.</li>';
+    taskList.innerHTML = '<li class="empty">No tasks yet. Add one clear next step.</li>';
     return;
   }
 
@@ -176,9 +176,9 @@ function renderTasks() {
     .map(
       (task) => `
         <li class="${task.done ? "done" : ""}" data-id="${task.id}">
-          <input data-toggle type="checkbox" ${task.done ? "checked" : ""} aria-label="Отметить задачу" />
+          <input data-toggle type="checkbox" ${task.done ? "checked" : ""} aria-label="Toggle task" />
           <span>${escapeHtml(task.title)}</span>
-          <button class="remove-task" data-remove type="button" aria-label="Удалить задачу">×</button>
+          <button class="remove-task" data-remove type="button" aria-label="Remove task">×</button>
         </li>
       `,
     )
