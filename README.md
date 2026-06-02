@@ -30,10 +30,6 @@ python -m http.server 8080
 http://localhost:8080
 ```
 
-## Публикация
-
-Инструкция по загрузке проекта на GitHub и включению GitHub Pages лежит в [DEPLOY.md](./DEPLOY.md).
-
 ## Структура
 
 ```text
