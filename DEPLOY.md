@@ -1,39 +1,39 @@
-# Как залить Focus Flow на GitHub
+# Deploy Focus Flow To GitHub
 
-Ниже два способа: через сайт GitHub без командной строки и через терминал. Если Git не установлен или команда `git` не работает, используйте первый способ.
+This guide shows two ways to publish the project: through the GitHub website or through the terminal.
 
-## Способ 1: через сайт GitHub
+## Option 1: GitHub Website
 
-1. Откройте [github.com/new](https://github.com/new).
-2. В поле **Repository name** напишите:
+1. Open [github.com/new](https://github.com/new).
+2. Use this repository name:
 
 ```text
 focus-flow
 ```
 
-3. Оставьте репозиторий **Public**, если хотите показать проект в профиле.
-4. Не добавляйте README, `.gitignore` и лицензию на сайте, потому что они уже есть в проекте.
-5. Нажмите **Create repository**.
-6. На странице нового репозитория нажмите **uploading an existing file**.
-7. Перетащите в окно GitHub все файлы из папки:
+3. Keep the repository **Public** if you want to show it on your profile.
+4. Do not add a README, `.gitignore`, or license on GitHub because the project already includes them.
+5. Click **Create repository**.
+6. On the new repository page, click **uploading an existing file**.
+7. Drag all files from this folder into GitHub:
 
 ```text
 D:\GitHub\focus-flow
 ```
 
-8. В поле commit message напишите:
+8. Use this commit message:
 
 ```text
 Create Focus Flow app
 ```
 
-9. Нажмите **Commit changes**.
+9. Click **Commit changes**.
 
-## Способ 2: через терминал
+## Option 2: Terminal
 
-Перед этим установите Git: [git-scm.com/downloads](https://git-scm.com/downloads).
+Install Git first if needed: [git-scm.com/downloads](https://git-scm.com/downloads).
 
-Затем выполните:
+Then run:
 
 ```bash
 cd D:\GitHub\focus-flow
@@ -45,14 +45,14 @@ git remote add origin https://github.com/Arviefull/focus-flow.git
 git push -u origin main
 ```
 
-## Как включить GitHub Pages
+## Enable GitHub Pages
 
-После загрузки проекта:
+After the project is uploaded:
 
-1. Откройте репозиторий `focus-flow` на GitHub.
-2. Перейдите в **Settings**.
-3. В левом меню откройте **Pages**.
-4. В блоке **Build and deployment** выберите:
+1. Open the `focus-flow` repository on GitHub.
+2. Go to **Settings**.
+3. Open **Pages** in the left menu.
+4. Under **Build and deployment**, select:
 
 ```text
 Source: Deploy from a branch
@@ -60,23 +60,23 @@ Branch: main
 Folder: /root
 ```
 
-5. Нажмите **Save**.
+5. Click **Save**.
 
-Через несколько минут сайт будет доступен по адресу:
+After a few minutes, the site will be available at:
 
 ```text
 https://arviefull.github.io/focus-flow/
 ```
 
-## Что написать в описании репозитория
+## Repository Description
 
-Короткое описание:
+Suggested description:
 
 ```text
 Minimal focus timer with tasks, stats, dark mode and localStorage.
 ```
 
-Темы для репозитория:
+Suggested topics:
 
 ```text
 javascript
@@ -89,11 +89,11 @@ focus-timer
 github-pages
 ```
 
-## Что закрепить в профиле
+## Pin The Project
 
-После загрузки можно закрепить репозиторий в профиле GitHub:
+To pin the repository on your GitHub profile:
 
-1. Откройте свой профиль.
-2. Нажмите **Customize your pins**.
-3. Выберите `focus-flow`.
-4. Сохраните изменения.
+1. Open your profile.
+2. Click **Customize your pins**.
+3. Select `focus-flow`.
+4. Save the changes.
