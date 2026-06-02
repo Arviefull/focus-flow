@@ -12,11 +12,11 @@
   <rect x="160" y="250" width="432" height="328" rx="8" fill="#ffffff" stroke="#e3d9ca" stroke-width="2"/>
   <circle cx="376" cy="393" r="112" fill="none" stroke="#e3d9ca" stroke-width="18"/>
   <path d="M376 281a112 112 0 1 1-92 176" fill="none" stroke="#1f8a70" stroke-width="18" stroke-linecap="round"/>
-  <text x="343" y="381" fill="#667085" font-family="Arial, sans-serif" font-size="22" font-weight="700">Фокус</text>
+  <text x="346" y="381" fill="#667085" font-family="Arial, sans-serif" font-size="22" font-weight="700">Focus</text>
   <text x="294" y="437" fill="#1f2933" font-family="Arial, sans-serif" font-size="56" font-weight="800">25:00</text>
   <rect x="628" y="250" width="412" height="328" rx="8" fill="#ffffff" stroke="#e3d9ca" stroke-width="2"/>
   <text x="662" y="300" fill="#146353" font-family="Arial, sans-serif" font-size="18" font-weight="700">TODAY</text>
-  <text x="662" y="340" fill="#1f2933" font-family="Arial, sans-serif" font-size="34" font-weight="800">Задачи</text>
+  <text x="662" y="340" fill="#1f2933" font-family="Arial, sans-serif" font-size="34" font-weight="800">Tasks</text>
   <rect x="662" y="374" width="304" height="48" rx="8" fill="#fffaf1" stroke="#e3d9ca" stroke-width="2"/>
   <rect x="662" y="446" width="304" height="48" rx="8" fill="#dff3ec" stroke="#1f8a70" stroke-width="2"/>
   <rect x="662" y="518" width="304" height="48" rx="8" fill="#fffaf1" stroke="#e3d9ca" stroke-width="2"/>
